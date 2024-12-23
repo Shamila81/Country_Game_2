@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Country Game 2</title>
+<script src="new.js"></script>
+<style>
+
+  body { font-family: Arial, sans-serif; }
+  .header { background-color: green; padding: 10px; text-align: center; }
+  .header button { margin: 0 5px; }
+  .game-container { padding: 20px; text-align: center; }
+  .country-btn, .quiz-btn { padding: 10px 20px; margin: 5px; }
+  .hidden { display: none; }
+  .country-info, .quiz-section { margin-top: 20px; }
+  .score-display { margin-top: 20px; }
+</style>
+</head>
+<body>
+  <script src="new.js"></script>
+  <div class="header">
+    <button onclick="showRules()">Rules</button>
+    <button onclick="showMain()">Main</button>
+    <button onclick="quitGame()">Quit</button>
+  </div>
+  <div class="game-container">
+    <h1>Country Game</h1>
+    <p>About the game.</p>
+    <p>Your fun-filled trip to Countries starts here!</p>
+    <button class="start-btn" onclick="startGame()">Start</button>
+    <div id="country-selection" class="hidden">
+      <p>To start the game please choose the country you would like to know about.</p>
+      <button class="country-btn" onclick="selectCountry('Nepal')">Nepal</button>
+      <button class="country-btn" onclick="selectCountry('Russia')">Russia</button>
+      <button class="country-btn" onclick="selectCountry('Sri Lanka')">Sri Lanka</button>
+      <button class="country-btn" onclick="selectCountry('Bangladesh')">Bangladesh</button>
+    </div>
+    <div id="country-info" class="country-info hidden">
+      <!-- Country information will be displayed here -->
+    </div>
+    <div id="quiz-section" class="quiz-section hidden">
+      <!-- Quiz will be displayed here -->
+    </div>
+    <div id="score-display" class="score-display hidden">
+      <!-- Score will be displayed here -->
+    </div>
+    <p>PROJECT ASSIGNMENT/PROJECT 2/</p>
+    <p>2023 | Finland</p>
+  </div>
+</body>
+</html>
